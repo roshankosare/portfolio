@@ -19,7 +19,7 @@ const Profile = () => {
             className="flex"
             href="https://www.linkedin.com/in/roshan-kosare-11a3a2259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           >
-            <img src="public/github.svg" className="sm:w-12 sm:h-12 h-8 w-8 my-auto" />
+            <img src="./github.svg" className="sm:w-12 sm:h-12 h-8 w-8 my-auto" />
           </a>
         </div>
       </div>
