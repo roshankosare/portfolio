@@ -1,6 +1,7 @@
 import "./App.css";
 import Profile from "./components/profile";
 import { Projects } from "./components/projects";
+import { BASE_URL } from "./constants";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <div className="flex sm:flex-row flex-col-reverse justify-center w-full ">
           <Profile />
           <img
-            src="./profile.jpeg"
+            src={`${BASE_URL}profile.jpeg`}
             className="sm:w-[300px] sm:h-[300px] w-[250px] h-[250px] rounded-full mx-auto"
           />
         </div>

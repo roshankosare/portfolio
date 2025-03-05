@@ -1,3 +1,5 @@
+import { BASE_URL } from "../constants";
+
 const Profile = () => {
   return (
     <div className="flex flex-col mx-auto text-white w-full sm:max-w-[600px] font-[kanit]">
@@ -11,7 +13,7 @@ const Profile = () => {
             href="https://www.linkedin.com/in/roshan-kosare-11a3a2259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           >
             <img
-              src="./linkedin.svg"
+              src={`${BASE_URL}linkedin.svg`}
               className="sm:w-12 sm:h-12 h-8 w-8 my-auto"
             />
           </a>
@@ -19,7 +21,10 @@ const Profile = () => {
             className="flex"
             href="https://www.linkedin.com/in/roshan-kosare-11a3a2259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           >
-            <img src="./github.svg" className="sm:w-12 sm:h-12 h-8 w-8 my-auto" />
+            <img
+              src={`${BASE_URL}github.svg`}
+              className="sm:w-12 sm:h-12 h-8 w-8 my-auto"
+            />
           </a>
         </div>
       </div>
