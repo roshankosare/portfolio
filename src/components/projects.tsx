@@ -5,6 +5,7 @@ import Dialog from "./Dialog";
 import { ProjectType } from "../types";
 import Project from "./project";
 
+
 export const Projects = () => {
   const [openDialog, setOpenDialog] = useState<boolean>(false);
   const [currentProject, setCurrentProject] = useState<ProjectType | null>(
@@ -14,8 +15,9 @@ export const Projects = () => {
     <div className="flex flex-col w-full gap-y-5">
       <h1 className="sm:text-4xl text-2xl font-extrabold">Projects</h1>
       <div className="flex sm:flex-row flex-col">
-        {ProjectsJson.map((project) => (
+        {ProjectsJson.map((project, index) => (
           <ProjectPreview
+            key={index}
             image={`${BASE_URL}${project.bannerImage}`}
             name={project.name}
             onOpenDialog={() => {
