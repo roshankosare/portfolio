@@ -5,7 +5,7 @@ import { BASE_URL } from "./constants";
 
 function App() {
   return (
-    <div className="w-full h-auto overflow-scroll bg-black text-white flex flex-col ">
+    <div className="w-full min-h-screen h-auto overflow-scroll bg-black text-white flex flex-col ">
       <div className="flex flex-col sm:max-w-[1200px] mx-auto py-10 px-4 gap-y-10">
         <div className="flex sm:flex-row flex-col-reverse justify-center w-full ">
           <Profile />

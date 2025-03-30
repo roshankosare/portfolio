@@ -37,4 +37,27 @@ Features:
     },
     bannerImage: "chessx/chessPreview.png",
   },
+
+  {
+    name: "E-commerce",
+    description: `E-Commerce App
+A simple and clean e-commerce app built with React, Tailwind CSS, and ShadCN UI, using the FakeStore API for product data.`,
+    githubLink: "https://github.com/roshankosare/e-com",
+    images: {
+      mobile: [
+        "e-com/mobile/mobile1.png",
+        "e-com/mobile/mobile2.png",
+        "e-com/mobile/mobile3.png",
+        "e-com/mobile/mobile4.png",
+        "e-com/mobile/mobile5.png",
+      ],
+      desktop: [
+        "e-com/desktop/desktop1.png",
+        "e-com/desktop/desktop2.png",
+        "e-com/desktop/desktop3.png",
+        "e-com/desktop/desktop4.png",
+      ],
+    },
+    bannerImage: "e-com/e-comPreview.png",
+  },
 ];
