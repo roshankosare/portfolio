@@ -1,4 +1,5 @@
 export type ProjectType = {
+  id: number;
   name: string;
   description: string;
   githubLink: string;
@@ -7,4 +8,5 @@ export type ProjectType = {
     mobile: string[];
   };
   bannerImage: string;
+  liveDemo:string;
 };

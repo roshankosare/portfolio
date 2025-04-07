@@ -1,37 +1,23 @@
-import { useState } from "react";
 import { BASE_URL, ProjectsJson } from "../constants";
 import ProjectPreview from "./projectPreview";
-import Dialog from "./Dialog";
-import { ProjectType } from "../types";
-import Project from "./project";
-
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
-  const [openDialog, setOpenDialog] = useState<boolean>(false);
-  const [currentProject, setCurrentProject] = useState<ProjectType | null>(
-    null
-  );
   return (
     <div className="flex flex-col w-full gap-y-5">
-      <h1 className="sm:text-4xl text-2xl font-extrabold">Projects</h1>
-      <div className="flex sm:flex-row flex-col gap-y-2 gap-x-2 sm:gap-x-5">
+      <div className="flex sm:flex-row flex-col gap-y-2 gap-x-2 sm:gap-x-5 justify-center flex-wrap">
         {ProjectsJson.map((project, index) => (
-          <ProjectPreview
-            key={index}
-            image={`${BASE_URL}${project.bannerImage}`}
-            name={project.name}
-            onOpenDialog={() => {
-              setOpenDialog(true);
-              setCurrentProject(project);
-            }}
-          />
+          <Link to={`/project/${project.id}`} key={index}>
+            <ProjectPreview
+              image={`${BASE_URL}${project.bannerImage}`}
+              name={project.name}
+              description={project.description}
+              githubLink={project.githubLink}
+              liveDemo={project.liveDemo}
+            />
+          </Link>
         ))}
       </div>
-      {currentProject && (
-        <Dialog isOpen={openDialog} onClose={() => setOpenDialog(false)}>
-          <Project project={currentProject} />
-        </Dialog>
-      )}
     </div>
   );
 };

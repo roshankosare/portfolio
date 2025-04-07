@@ -4,6 +4,7 @@ export const BASE_URL = import.meta.env.VITE_ENV ? "/portfolio/" : "./";
 
 export const ProjectsJson: ProjectType[] = [
   {
+    id: 1,
     name: "ChessX",
     description: `ChessX – Play Chess Online
 ChessX is a simple and interactive online chess platform where you can enjoy playing chess anytime!
@@ -36,9 +37,11 @@ Features:
       ],
     },
     bannerImage: "chessx/chessPreview.png",
+    liveDemo: "https://chessx-frontend.netlify.app/",
   },
 
   {
+    id: 2,
     name: "E-commerce",
     description: `E-Commerce App
 A simple and clean e-commerce app built with React, Tailwind CSS, and ShadCN UI, using the FakeStore API for product data.`,
@@ -59,5 +62,6 @@ A simple and clean e-commerce app built with React, Tailwind CSS, and ShadCN UI,
       ],
     },
     bannerImage: "e-com/e-comPreview.png",
+    liveDemo: "roshankosare.github.io/e-com",
   },
 ];

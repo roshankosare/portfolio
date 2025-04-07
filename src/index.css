@@ -1,9 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --font-roboto: "robot" sans-serif;
   --font-kanit: "Kanit", sans-serif;
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Typing Effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* Typing Animation Utility */
+}
+.typing-text {
+  /* Hides text overflow */
+  white-space: nowrap; /* Prevents text wrapping */
+  border-right: 3px solid black; /* Cursor effect */
+  width: 0;
+  animation: typing 3s steps(20, end) forwards, 0.7s infinite;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
