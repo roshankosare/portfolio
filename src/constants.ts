@@ -62,6 +62,6 @@ A simple and clean e-commerce app built with React, Tailwind CSS, and ShadCN UI,
       ],
     },
     bannerImage: "e-com/e-comPreview.png",
-    liveDemo: "roshankosare.github.io/e-com",
+    liveDemo: "https://roshankosare.github.io/e-com",
   },
 ];

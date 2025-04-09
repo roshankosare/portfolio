@@ -21,10 +21,6 @@ const Home = () => {
             <p className="text-sm  sm:text-lg text-gray-300 prose">
               I specialize in full-stack software development,
             </p>
-
-            <Button className=" min-w-[150px] px-4 py-2 bg-white hover:bg-white text-gray-900 cursor-pointer my-5">
-              Contact
-            </Button>
           </div>
         </div>
         <img

@@ -24,19 +24,19 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           <p className="text-justify">{project.description}</p>
           <div className="flex flex-row px-2 gap-x-4">
             <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center ">
-              <GitHubIcon className="w-4 h-4 text-black">
-                {project.githubLink}
-              </GitHubIcon>
+              <a href={project.githubLink}>
+                <GitHubIcon className="w-4 h-4 text-black"></GitHubIcon>
+              </a>
             </div>
             <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
-              <LinkIcon
-                className="w-4 h-4 text-black"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                {project.liveDemo}
-              </LinkIcon>
+              <a href={project.liveDemo}>
+                <LinkIcon
+                  className="w-4 h-4 text-black"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                ></LinkIcon>
+              </a>
             </div>
           </div>
         </div>
