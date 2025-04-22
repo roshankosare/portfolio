@@ -64,4 +64,31 @@ A simple and clean e-commerce app built with React, Tailwind CSS, and ShadCN UI,
     bannerImage: "e-com/e-comPreview.png",
     liveDemo: "https://roshankosare.github.io/e-com",
   },
+
+  {
+    id: 3,
+    name: "Resume Builder",
+    description: `Simple and easy to use Resume builder app built using React. 
+    Create your Resume's just simply by filling up details in provided UI and Download it.`,
+    githubLink: "https://github.com/roshankosare/resume-builder",
+    images: {
+      mobile: [
+        "resume-builder/mobile/mobile1.png",
+        "resume-builder/mobile/mobile2.png",
+        "resume-builder/mobile/mobile3.png",
+        "resume-builder/mobile/mobile4.png",
+        "resume-builder/mobile/mobile5.png",
+        "resume-builder/mobile/mobile6.png",
+      ],
+      desktop: [
+        "resume-builder/desktop/desktop1.png",
+        "resume-builder/desktop/desktop2.png",
+        "resume-builder/desktop/desktop3.png",
+        "resume-builder/desktop/desktop4.png",
+        "resume-builder/desktop/desktop5.png",
+      ],
+    },
+    bannerImage: "resume-builder/resumeBuilderBanner.png",
+    liveDemo: "https://roshankosare.github.io/resume-builder",
+  },
 ];
